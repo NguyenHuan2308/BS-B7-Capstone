@@ -1,0 +1,371 @@
+/* ======== Reset CSS =========*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    color: #212529;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+/* ============== Nav ================*/
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 80px;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.navbar-brand {
+    font-size: 36px;
+    font-weight: 600;
+    color: #189a46;
+}
+
+.navbar-brand:hover {
+    color: #189a46;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #212529;
+    font-weight: 400;
+    transition: all 0.5s;
+    padding: 0px 0px !important;
+}
+
+.nav-item {
+    margin-left: 25px;
+}
+
+#navbarScroll {
+    gap: 25px;
+}
+
+.nav-item:hover .nav-link {
+    color: #189a46;
+}
+
+.nav-item.active a {
+    color: #189a46;
+}
+
+@media (min-width: 992px) {
+    .nav-item::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #189a46;
+        transition: all 0.5s;
+    }
+
+    .nav-item:hover::after {
+        width: 100%;
+    }
+}
+
+#navbarScroll form button {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: rgba(147, 107, 232, 0.05);
+}
+
+#navbarScroll form:hover i {
+    color: #fff;
+}
+
+#navbarScroll form:hover button {
+    background-color: #189a46;
+}
+
+/* ============= Carousel ================ */
+.myCarousel .carousel-item {
+    height: clamp(80vh, 70vw, 100vh);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 40, 40, 0.5);
+}
+
+.carousel-caption {
+    z-index: 1;
+}
+
+.carousel-caption h5 {
+    font-size: clamp(28px, 5vw, 66px);
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.carousel-caption p {
+    color: #fff;
+    font-size: clamp(16px, 2vw, 19px);
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: left top;
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    left: 5%;
+}
+
+@media (min-width: 920px) {
+    .cap2,
+    .cap4 {
+        left: 40%;
+    }
+}
+
+.btn {
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.btn-read {
+    color: #189a46;
+    background-color: #fff;
+    padding: clamp(8px, 1.2vw, 12px) clamp(20px, 2.5vw, 35px) !important;
+    font-size: clamp(15px, 1.8vw, 20px);
+    border-radius: 10px;
+}
+
+.btn-read:hover {
+    color: #189a46;
+    background-color: #fff;
+    padding: 12px 35px;
+}
+
+.btn-contact {
+    color: #fff;
+    border-color: #fff;
+    padding: clamp(8px, 1.2vw, 12px) clamp(20px, 2.5vw, 35px) !important;
+    font-size: clamp(15px, 1.8vw, 20px);
+    border-radius: 10px;
+}
+
+.btn-contact:hover {
+    color: #189a46;
+    background-color: #fff;
+}
+
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    margin: 7px !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease;
+    border: none !important;
+    bottom: 10%;
+}
+
+.carousel-indicators .active {
+    width: 35px !important;
+    border-radius: 10px !important;
+    background-color: #189a46;
+}
+
+.carousel-indicators button:hover {
+    width: 35px !important;
+    border-radius: 10px !important;
+    background-color: #189a46;
+}
+
+/* ================== About Us ================= */
+@media (min-width:920px){
+    .about{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+.about .title {
+    color: #f53626;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+.about h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+}
+
+.about a {
+    text-decoration: none;
+    color: #000c04;
+    font-size: 17px;
+    padding: 0;
+    border-bottom: 2px solid #189a46;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.about a:hover {
+    color: #189a46;
+}
