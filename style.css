@@ -225,7 +225,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(40, 40, 40, 0.5);
+    background-color: #0c0c0c;
+    opacity: 0.6;
 }
 
 .carousel-caption {
@@ -327,8 +328,8 @@ body {
 }
 
 /* ================== About Us ================= */
-@media (min-width:920px){
-    .about{
+@media (min-width: 920px) {
+    .about {
         width: 60%;
         margin: auto;
     }
@@ -368,4 +369,483 @@ body {
 
 .about a:hover {
     color: #189a46;
+}
+
+/* ================== services ===================== */
+.services {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.services .item {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.services i {
+    font-size: 28px;
+    color: #189a46;
+    margin-bottom: 20px;
+}
+
+.services h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.services p {
+    font-size: 20px;
+    color: #696969;
+    margin-bottom: 20px;
+}
+
+.services .item a {
+    text-decoration: none;
+    color: #000c04;
+    font-size: 17px;
+    padding: 0;
+    border-bottom: 2px solid #189a46;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.services .item a:hover {
+    color: #189a46;
+}
+
+.services .item:hover {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.services h3:hover {
+    color: #189a46;
+}
+
+/* ============== CHoose ================== */
+.choose .img img {
+    border-radius: 10px;
+}
+
+.choose .sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+
+.choose h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.choose .des {
+    font-size: 1.2rem;
+    color: #696969;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.choose ul i {
+    margin-right: 10px;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    background: rgba(147, 107, 232, 0.05);
+    color: #189a46;
+}
+
+.choose ul span {
+    font-size: 16px;
+    line-height: 26px;
+    color: #000c04;
+    font-weight: 600;
+}
+
+/* ============ Number ================ */
+.number {
+    background-color: #189a46;
+}
+
+.number h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.number p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 400;
+    text-align: center;
+}
+
+.number .item {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 920px) {
+    .number .row {
+        width: 80%;
+        margin: auto;
+    }
+    .number h3 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .number p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .number .item {
+        margin-bottom: 0;
+    }
+}
+
+/* ================ Price ================= */
+.price {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.price .container {
+    width: 70%;
+    margin: auto;
+}
+
+.price .sub-title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #f53626;
+}
+
+.price h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #000c04;
+}
+
+.price .item {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+    background-color: white !important;
+    margin-top: 20px;
+}
+
+.price .item h4 {
+    color: #000c04;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.price .num,
+.dollar {
+    color: #189a46;
+}
+
+.price .month {
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+
+.price .title {
+    margin-bottom: 50px;
+}
+
+.price .num {
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+}
+
+.price .dollar {
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+
+.price .lists li {
+    font-size: 18px;
+    line-height: 28px;
+    color: #696969;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+}
+
+.price .lists {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.price .btn {
+    background-color: #189a46;
+    color: white;
+    font-size: 16px;
+}
+
+.price .active {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 2;
+    margin-top: -15px;
+}
+
+.price .card-header-green {
+    background-color: #189a46;
+    margin-bottom: 30px;
+}
+
+.price .badge-save {
+    background-color: #ffffff;
+    color: #189a46;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* ============= Pet Need ================*/
+@media (min-width: 920px) {
+    .petNeed {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+.petNeed .sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+
+.petNeed h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #000c04;
+    margin-bottom: 15px;
+}
+
+.petNeed .des {
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+}
+
+.petNeed .img-wrapper img {
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.petNeed .img-wrapper a i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #189a46;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    animation: play-button-wave 2s infinite;
+}
+
+.petNeed .img-wrapper a i:hover {
+    color: white;
+    color: #189a46;
+    scale: 1.1;
+}
+
+@keyframes play-button-wave {
+    0% {
+        box-shadow:
+            0 0 0 0 #189a4610,
+            0 0 0 0 #189a4610;
+    }
+    70% {
+        box-shadow:
+            0 0 0 15px #189a4640,
+            0 0 0 30px #189a4640;
+    }
+    100% {
+        box-shadow:
+            0 0 0 0 #189a4660,
+            0 0 0 0 #189a4660;
+    }
+}
+
+/* =========== Feedback ================ */
+.feedback {
+    padding-bottom: 50px;
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.feedback .user-feedback p {
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+}
+
+.feedback .user-feedback img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.feedback .info {
+    margin-left: 20px;
+}
+
+.feedback .name {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000c04 !important;
+}
+
+.feedback .city {
+    line-height: 28px;
+    font-size: 16px !important;
+}
+
+.carousel-indicators {
+    bottom: -70px;
+    margin-bottom: 0;
+}
+
+.carousel-indicators button {
+    background-color: #ccc !important;
+}
+
+.carousel-indicators .active {
+    background-color: #189a46 !important;
+}
+
+.carousel-indicators button:hover {
+    background-color: #189a46 !important;
+}
+
+/* ============ updated ============== */
+@media (min-width: 920px) {
+    .updated {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.updated .content {
+    margin-bottom: 40px;
+}
+.updated h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #000c04;
+    margin-bottom: 20px;
+}
+
+.updated p {
+    font-size: 19px;
+    color: #696969;
+}
+
+.updated input {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid #696969;
+    outline: none;
+}
+
+.updated input:focus {
+    border-color: #189a46;
+    box-shadow: none;
+}
+.updated button {
+    border-radius: 10px;
+    padding: 15px 30px;
+    background-color: #189a46;
+    color: white;
+}
+
+/* ================= Footer ============== */
+footer {
+    background-color: #000000;
+}
+
+p,.address,
+.phone,
+.email,
+.icon {
+    color: #696969;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+footer h3 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+footer span {
+    font-weight: 400;
+}
+
+footer .value:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+footer .icon i{
+    margin-right: 10px;
+}
+
+footer .icon i:hover {
+    color: white;
+}
+
+footer .cpright {
+    color: #696969;
+    border-top: 1px solid #69696950;
+}
+
+footer .cpright span {
+    color: #f53626;
+}
+footer .cpright span:hover{
+    text-decoration: underline;
 }
