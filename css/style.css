@@ -850,6 +850,10 @@ body {
     color: #ffffff;
 }
 
+.updated button {
+    margin-left: 0px;
+}
+
 /* ================= Footer ============== */
 footer {
     background-color: #000000;
