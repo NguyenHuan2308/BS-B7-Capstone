@@ -659,6 +659,7 @@ body {
     line-height: 48px;
     color: #000c04;
     margin-bottom: 15px;
+    text-transform: capitalize;
 }
 
 .petNeed .des {
@@ -725,6 +726,22 @@ body {
     line-height: 28px;
     color: #696969;
     font-weight: 400;
+    position: relative;
+}
+
+.feedback .user-feedback .feedback-content {
+    text-indent: 25px;
+}
+
+.feedback .user-feedback .feedback-content::before{
+    content: "\201c"; 
+    position: absolute;
+    top: -10px; 
+    left: -25px;
+    font-size: 60px;
+    font-family: Georgia, serif; 
+    color: #189a46;
+    line-height: 1;
 }
 
 .feedback .user-feedback img {
@@ -825,6 +842,12 @@ body {
     padding: 15px 30px;
     background-color: #189a46;
     color: white;
+    transition: all 0.5s;
+}
+
+.updated button:hover{
+    background-color:#0f5929 ;
+    color: #ffffff;
 }
 
 /* ================= Footer ============== */
