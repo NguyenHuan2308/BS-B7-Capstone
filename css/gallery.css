@@ -1,0 +1,37 @@
+.view .image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.view .image-container img {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.view .image-container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -150%; 
+    width: 30%; 
+    height: 200%;
+
+    transform: rotate(30deg);
+
+    /* Tạo dải màu gradient trắng mờ, hơi nghiêng */
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        rgba(255, 255, 255, 0) 100%
+    );
+
+    z-index: 2;
+}
+
+.image-container:hover::before {
+    left: 150%;
+    transition: left 0.8s;
+}

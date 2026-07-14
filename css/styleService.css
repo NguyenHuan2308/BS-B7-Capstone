@@ -1,0 +1,19 @@
+/* =========== Service =============== */
+.service-number {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+
+.service-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #000c04;
+}
+
+.page-services .row {
+    border-bottom: 1px solid #69696920;
+}
